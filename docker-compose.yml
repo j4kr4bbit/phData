@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: .
+    volumes:
+      #mount model related data separate from application code
+      - ./data:/phdata/data
+      - ./model:/phdata/model
+      - ./api:/phdata/api
+    ports:
+      - 8000:8000
