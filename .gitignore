@@ -2,3 +2,4 @@ model/*
 *.pyc
 venv
 __pycache__
+model-improved/*
